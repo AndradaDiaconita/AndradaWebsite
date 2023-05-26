@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Andrada Ioana Diaconita</title>
+  <style>
+    body {
+      background-color: black;
+      color: pink;
+      font-family: 'Josefin Sans', Arial, sans-serif;
+      margin: 0;
+    }
+    
+    header {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .links {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .links a {
+      display: inline-block;
+      margin: 0 10px;
+      color: pink;
+      text-decoration: none;
+      transition: transform 0.2s;
+    }
+
+    .links a:hover {
+      transform: scale(1.1);
+    }
+    
+    h1 {
+      font-size: 32px;
+    }
+    
+    .dropdown {
+      display: inline-block;
+      position: absolute;
+      top: 30px;
+      right: 80px;
+    }
+
+    .dropdown:hover {
+      transform: scale(1.2);
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: pink;
+      min-width: 120px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+     
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+      
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #ddd;
+      transform: scale(1.1);
+    }
+
+
+    
+    .button {
+      background-color: pink;
+      color: black;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: transform 0.2s;
+    }
+    
+    .button:hover {
+      transform: scale(1.1);
+    }
+    
+    .main-content {
+      padding: 20px;
+    }
+
+    .info-bubble {
+      position: absolute;
+      background-color: pink;
+      color: black;
+      padding: 20px 40px;
+      border-radius: 50%;
+      animation-name: bubble;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes bubble {
+      0% {
+        opacity: 0;
+        transform: translateY(100%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    
+
+    .age {
+      top: 50%;
+      left: 5%;
+      margin-top: 20%;
+    }
+
+    .degree {
+      top: 30%;
+      left: 85%;
+      margin-right: 30%;
+    }
+
+    .university {
+      top: 70%;
+      left: 70%;
+      margin-left: 30%;
+    }
+
+    .passion {
+      top: 20%;
+      left: 60%;
+      margin-left: -10%;
+      margin-top: 30%;
+    }
+
+    .games {
+      top: 70%;
+      left: 40%;
+      margin-top: -10%;
+      margin-right: 10%;
+    }
+
+    .color {
+      top: 20%;
+      left: 70%;
+      margin-left: 30%;
+    }
+
+    .animal {
+      top: 40%;
+      left: 60%;
+      margin-top: -10%;
+      margin-left: -10%;
+    }
+
+    .origin {
+      top: 30%;
+      left: 20%;
+      margin-right: 20%;
+    }
+
+    .languages {
+      top: 50%;
+      left: 10%;
+      margin-right: 10%;
+    }
+
+    .schools {
+      top: 80%;
+      left: 50%;
+      margin-left: 30%;
+    }
+
+    .interests {
+      top: 80%;
+      left: 20%;
+      margin-right: 10%;
+    }
+
+
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <div class="info-bubble age">
+    Age: 20
+  </div>
+  <div class="info-bubble degree">
+    Degree: Undergraduate Bachelor's Degree in Computer Science
+  </div>
+  <div class="info-bubble university">
+    University: Concordia University
+  </div>
+  <div class="info-bubble passion">
+    Passion: Video Games, for example Valorant
+  </div>
+  <div class="info-bubble games">
+    Been playing video games since I'm a child, including MMORPG, FPS Shooters, Kids Games, Single Player and Multiplayer
+  </div>
+  <div class="info-bubble color">
+    Favorite Color: Pink and Yellow
+  </div>
+  <div class="info-bubble animal">
+    Favorite Animal: Dog
+  </div>
+  <div class="info-bubble origin">
+    Where am I from: Romania (born there as well)
+  </div>
+  <div class="info-bubble languages">
+    Languages I speak: Romanian, French and English
+  </div>
+  <div class="info-bubble schools">
+    Schools I went to: College John Abbott and College Jean Eudes (High School)
+  </div>
+  <div class="info-bubble interests">
+    Interests: Technology,Gaming World, IT, Computers
+  </div>
+  <header>
+    <h1>Andrada Ioana Diaconita</h1>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/andrada-ioana-diaconita-24b67a255/">LinkedIn</a>
+      <a href="https://github.com/AndradaDiaconita">GitHub</a>
+    </div>
+    <div class="dropdown">
+      <a class="button" href="#">Menu</a>
+      <div class="dropdown-content">
+        <a href="projects.html">My Projects</a>
+        <a href="cv.html">My CV</a>
+      </div>
+    </div>
+  </header>
+
+  
+  <div class="main-content">
+    <h2>About Me</h2>
+  </div>
+
+  <script>
+    // JavaScript to delay the animation of each bubble
+    const bubbles = document.querySelectorAll('.info-bubble');
+    bubbles.forEach((bubble, index) => {
+      bubble.style.animationDelay = `${index * 0.5}s`;
+    });
+  </script>
+</body>
+</html>

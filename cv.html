@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CV - Andrada Ioana Diaconita</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Josefin Sans', Arial, sans-serif;
+      margin: 0;
+    }
+    
+    header {
+      padding: 40px;
+      text-align: center;
+      opacity: 0; /* Hide initially */
+      animation: fade-in 1s forwards; /* Apply fade-in animation */
+    }
+    
+    h1 {
+      font-size: 32px;
+      color: pink;
+      margin: 0;
+    }
+    
+    .main-content > * {
+      opacity: 0; /* Hide initially */
+      animation: slide-up 1s forwards; /* Apply slide-up animation */
+    }
+    
+    /* Delay each section */
+    .main-content > *:nth-child(1) {
+      animation-delay: 0.5s;
+    }
+    .main-content > *:nth-child(2) {
+      animation-delay: 1s;
+    }
+    .main-content > *:nth-child(3) {
+      animation-delay: 1.5s;
+    }
+
+    .main-content > *:nth-child(4) {
+      animation-delay: 2s;
+    }
+
+    .main-content > *:nth-child(5) {
+      animation-delay: 2.5s;
+    }
+
+    .main-content > *:nth-child(6) {
+      animation-delay: 3s;
+    }
+
+    .main-content > *:nth-child(7) {
+      animation-delay: 3.5s;
+    }
+
+    .main-content > *:nth-child(8) {
+      animation-delay: 4s;
+    }
+
+    .main-content > *:nth-child(9) {
+      animation-delay: 4.5s;
+    }
+
+    .main-content > *:nth-child(10) {
+      animation-delay: 5s;
+    }
+
+    .main-content > *:nth-child(11) {
+      animation-delay: 5.5s;
+    }
+
+    .main-content > *:nth-child(12) {
+      animation-delay: 6s;
+    }
+
+    .main-content > *:nth-child(13) {
+      animation-delay: 6.5s;
+    }
+
+    .main-content > *:nth-child(14) {
+      animation-delay: 7s;
+    }
+
+    .main-content > *:nth-child(15) {
+      animation-delay: 7.5s;
+    }
+    /* ...repeat for each section... */
+    
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    
+    @keyframes slide-up {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    h2 {
+      font-size: 34px;
+      text-align: center;
+      color: pink;
+    }
+    
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    
+    li {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 22px;
+    }
+    
+    .section-title {
+      font-weight: bold;
+    }
+    
+    .section-description {
+      margin-top: 5px;
+      color: #ccc;
+    }
+    
+    .year-description {
+      display: inline-block;
+      margin-left: 50px;
+      color: pink;
+    }
+    
+    .section-divider {
+      margin-top: 100px;
+      border-top: 1px solid pink;
+    }
+    
+    .section-divider2 {
+      margin-top: 50px;
+    }
+    
+    .bold-text {
+      font-weight: bold;
+      color: pink;
+    }
+    
+    .section-content > div:not(.course-list) {
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+    
+    .course-list ul {
+      margin-left: 20px;
+    }
+    
+    .indent {
+      text-indent: -20px;
+      padding-left: 20px;
+    }
+    
+    .button {
+      display: inline-block;
+      background-color: pink;
+      color: black;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 4px;
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      transition: transform 0.2s;
+    }
+    
+    .button:hover {
+      transform: scale(1.2);
+    }
+  </style>
+   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>CV - Andrada Ioana Diaconita</h1>
+  </header>
+  
+  <div class="main-content">
+    <h2>SUMMARY OF SKILLS AND QUALIFICATIONS:</h2>
+    <ul>
+      <li>
+        <span class="section-title">Operating Systems:</span>
+        <span class="section-description">Windows Vista / XP / 7 / 8 / 10 / 11 • iOS</span>
+      </li>
+      <li>
+        <span class="section-title">Applications:</span>
+        <span class="section-description">Microsoft Office: Word / Excel / PPT • Eclipse • IntelliJ • G Suite: Docs / Slides / Sheets • Photoshop • Adobe Acrobat</span>
+      </li>
+      <li>
+        <span class="section-title">Programming:</span>
+        <span class="section-description">Java • HTML (Website) • R Studio (Statistics)</span>
+      </li>
+      <li>
+        <span class="section-title">Other:</span>
+        <span class="section-description">GitHub • YouTube • Data Structures and Algorithms (Summer 2023)</span>
+      </li>
+      <li>
+        <span class="section-title">Languages:</span>
+        <span class="section-description">French (Spoken & Written) • English (Spoken & Written) • Romanian (Spoken & Written)</span>
+      </li>
+    </ul>
+    
+    <div class="section-divider"></div>
+    
+    <h2>EDUCATION:</h2>
+    <ul>
+      <li>
+        <span class="section-title">Bachelor of Computer Science – Building Computer Science Co-op</span>
+        <span class="section-description year-description">2022-2025 (Expected)</span>
+        <div class="section-content">
+          <div>Concordia University, Montreal, QC</div>
+          <div>Member of the Institute for Co-operative Education</div>
+          <div class="course-list">
+            <div class="bold-text">Relevant Courses:</div>
+            <ul>
+              <li>Mathematics for Computer Science (Fall 2022)</li>
+              <li>Object – Oriented Programming 1 & 2 (Fall 2022 & Winter 2023)</li>
+              <li>System Hardware (Winter 2023)</li>
+              <li>Probability and Statistics for Computer Science (Winter 2023)</li>
+              <li>Technical Writing and Communication (Winter 2023)</li>
+              <li>Principles of Programming Languages (Summer 2023)</li>
+              <li>Data Structures and Algorithms (Summer 2023)</li>
+              <li>Web Programming (Summer 2023)</li>
+              <li>Microeconomics & Macroeconomics (Winter 2023 & Summer 2023)</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="section-divider2"></div>
+        <span class="section-title">DEC in Science</span>
+        <span class="section-description year-description">2020-2022</span>
+        <ul>
+          <li>John Abbott College, St-Anne De Bellevue, Montreal, QC</li>
+          <li>Dean’s List Honour Roll (2020 - 2022)</li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="section-divider"></div>
+
+    <h2>PROJECTS:</h2>
+    <ul>
+      <li>
+        <span class="section-title">Snakes &amp; Ladders Basic Game in JAVA</span>
+        <span class="section-description year-description">Fall 2022</span>
+        <ul>
+          <li>Concordia University, Montreal, QC</li>
+          <li>Designing a Snakes &amp; Ladder Java code. Made for 2 players, automatic roll of dice, mentions the updated square each player is. Project done for school.</li>
+          <li>Programming a simple clear game with Java (Eclipse)</li>
+        </ul>
+      </li>
+      <li>
+        <span class="section-title">LinkedList &amp; ArrayList of Books project in JAVA</span>
+        <span class="section-description year-description">Winter 2023</span>
+        <ul>
+          <li>Concordia University, Montreal, QC</li>
+          <li>Designing a code that outputs a menu: display books, delete consecutive records, extract from a specific author, put a book in between 2 books, etc. Project done for school.</li>
+            <li>Organizing an array of books and manipulating different methods using Java (Eclipse)</li>
+          </ul>
+        </li>
+        <li>
+          <span class="section-title">Correcting and printing a list of thousands of Books in JAVA</span>
+          <span class="section-description year-description">Winter 2023</span>
+          <ul>
+            <li>Concordia University, Montreal, QC</li>
+            <li>Designing a code correcting thousands of books printed in different file texts. The corrections include wrong year, price, ISBN, author, etc. The project has a main emphasis on Exception Handling and File I/O.</li>
+            <li>Helping a bookkeeper display and print the good books into a new file text using Java (Eclipse)</li>
+          </ul>
+        </li>
+      </ul>
+  
+      <div class="section-divider"></div>
+  
+      <h2>WORK &amp; HELP EXPERIENCE:</h2>
+      <ul>
+        <li>
+          <span class="section-title">Help in Real Estate Agent</span>
+          <span class="section-description year-description">2021</span>
+          <ul>
+            <li>Personal Help and Learner for a Real Estate Agent for REMAX</li>
+            <li>Analyzed the steps in selling a house.</li>
+            <li>Learned the organization from the beginning to the end of a process of a house sale.</li>
+            <li>Developed networking skills by using different websites to get in contact with houses and clients.</li>
+            <li>Strengthened communication skills, especially in a formal and professional way.</li>
+            <li>Used real estate websites and emails for communication.</li>
+          </ul>
+        </li>
+      </ul>
+    
+      <div class="section-divider"></div>
+    
+      <h2>INTERESTS</h2>
+      <ul>
+        <li>
+          <span class="section-title">Experience Abroad</span>
+          <span class="section-description">Visited Cuba, Dominican Republic, United States, and Romania for vacation interests.</span>
+        </li>
+        <li>
+          <span class="section-title">Passions</span>
+          <span class="section-description">Passion in video games, especially FPS games. Hoping to be able to create my own FPS video game.</span>
+        </li>
+      </ul>
+      <div class="section-divider"></div>
+    </div>
+    <a class="button" href="index.html">Go Back to Main Page</a>
+  </body>
+  </html>
+  
