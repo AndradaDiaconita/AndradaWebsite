@@ -1,0 +1,195 @@
+:root{
+      --bg: #f3eadb;         /* beige */
+      --card: #ffffff;       /* white */
+      --text: #141414;       /* near-black */
+      --muted: #5a5a5a;      /* grey */
+      --border: rgba(20,20,20,.12);
+      --shadow: 0 10px 30px rgba(0,0,0,.08);
+      --accent: #b45773;     /* muted rose */
+      --accent2:#2b2b2b;     /* black-ish */
+      --radius: 18px;
+      --max: 980px;
+    }
+
+    *{ box-sizing: border-box; }
+    html, body{ height: 100%; }
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    a{ color: inherit; text-decoration: none; }
+    a:hover{ text-decoration: underline; text-decoration-thickness: 2px; }
+
+    .wrap{ max-width: var(--max); margin: 0 auto; padding: 28px 18px 54px; }
+
+    /* Top nav */
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      gap: 14px;
+      position: sticky; top: 0;
+      backdrop-filter: blur(10px);
+      background: color-mix(in srgb, var(--bg) 80%, transparent);
+      border-bottom: 1px solid color-mix(in srgb, var(--border) 60%, transparent);
+      padding: 14px 18px;
+      z-index: 10;
+    }
+    .brand{ font-weight: 750; letter-spacing: .2px; }
+    .nav-links{
+      display:flex; gap: 12px; flex-wrap: wrap;
+      font-size: 14px;
+    }
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      padding: 10px 12px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--card) 70%, transparent);
+    }
+    .pill:hover{ box-shadow: 0 8px 18px rgba(0,0,0,.08); text-decoration:none; }
+
+    .cta{
+      background: var(--accent);
+      color: #fff;
+      border: 1px solid color-mix(in srgb, var(--accent) 60%, #000);
+    }
+
+    /* Sections */
+    .card{
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 22px;
+      margin: 18px 0;
+    }
+    .hero{
+      padding: 28px 22px;
+      background: linear-gradient(
+        135deg,
+        color-mix(in srgb, var(--card) 92%, var(--bg)),
+        color-mix(in srgb, var(--card) 86%, #fff)
+      );
+    }
+    .hero h1{
+      margin:0 0 6px;
+      font-size: clamp(28px, 4vw, 44px);
+      line-height: 1.15;
+      letter-spacing: -0.5px;
+    }
+    .subtitle{
+      margin: 0;
+      color: var(--muted);
+      font-size: 16px;
+    }
+    .quick{
+      display:flex; gap: 10px; flex-wrap: wrap;
+      margin-top: 14px;
+    }
+
+    h2{
+      margin: 0 0 10px;
+      font-size: 18px;
+      letter-spacing: .2px;
+    }
+    p{ margin: 0 0 10px; color: color-mix(in srgb, var(--text) 92%, #000); }
+    .muted{ color: var(--muted); }
+
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    @media (max-width: 780px){
+      .grid{ grid-template-columns: 1fr; }
+    }
+
+    ul{ margin: 8px 0 0 18px; }
+    li{ margin: 6px 0; }
+
+    .badge-row{ display:flex; flex-wrap:wrap; gap:8px; margin-top: 8px; }
+    .badge{
+      font-size: 13px;
+      padding: 8px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: color-mix(in srgb, var(--bg) 55%, #fff);
+      color: var(--accent2);
+    }
+
+    .footer{
+      margin-top: 26px;
+      text-align:center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* tiny icon */
+    .dot{
+      width:8px; height:8px; border-radius: 999px; display:inline-block;
+      background: var(--accent);
+    }
+
+/* --- enhancements: scroll reveal + subtle motion --- */
+.reveal{
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity .75s ease, transform .75s ease;
+  will-change: opacity, transform;
+}
+.reveal.is-visible{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Ensure common blocks get reveal if not already styled */
+section, .section, .card, .panel{
+  scroll-margin-top: 90px;
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce){
+  html{ scroll-behavior:auto !important; }
+  .reveal{ transition:none !important; transform:none !important; opacity:1 !important; }
+}
+
+/* === Two-column layout === */
+.layout{
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  gap: 28px;
+  align-items: start;
+}
+
+/* Left column */
+.main-content{
+  grid-column: 1;
+}
+
+/* Right sticky profile */
+.side-profile{
+  grid-column: 2;
+  position: sticky;
+  top: 90px;
+}
+
+/* Hide on mobile */
+@media (max-width: 900px){
+  .layout{
+    grid-template-columns: 1fr;
+  }
+  .side-profile{
+    display: none;
+  }
+}
+
+.card:hover{
+  transform: translateY(-2px);
+  transition: transform .2s ease;
+}
+
+
+
