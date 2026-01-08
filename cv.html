@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CV — Andrada Ioana Diaconita</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* CV-specific layout (keeps your existing theme from styles.css) */
+    .cv-header h1{ margin:0 0 6px; font-size: clamp(26px, 3.2vw, 36px); }
+    .cv-sub{ margin:0; color: var(--muted); }
+    .cv-topline{
+      display:flex; flex-wrap:wrap; gap:10px 14px;
+      margin-top: 10px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .cv-topline a{ text-decoration: underline; text-underline-offset: 3px; }
+    .cv-grid{
+      display:grid;
+      grid-template-columns: 1.35fr .65fr;
+      gap: 16px;
+    }
+    @media (max-width: 900px){
+      .cv-grid{ grid-template-columns: 1fr; }
+    }
+
+    .cv-section-title{
+      margin-top: 4px;
+      font-size: 15px;
+      letter-spacing: .6px;
+      text-transform: uppercase;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+
+    .cv-item{
+      display:grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px dashed color-mix(in srgb, var(--border) 65%, transparent);
+    }
+    .cv-item:last-child{ border-bottom: none; }
+
+    .cv-role{ font-weight: 700; }
+    .cv-org{ color: var(--muted); font-style: italic; margin-top: 2px; }
+    .cv-meta{ color: var(--muted); white-space: nowrap; text-align:right; }
+
+    .cv-bullets{ margin: 8px 0 0 18px; }
+    .cv-bullets li{ margin: 6px 0; }
+
+    .tag-row{ display:flex; flex-wrap:wrap; gap:8px; margin-top: 10px; }
+    .tag{
+      font-size: 13px;
+      padding: 8px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: color-mix(in srgb, var(--bg) 55%, #fff);
+      color: var(--accent2);
+    }
+  </style>
+</head>
+
+<body>
+  <header class="nav">
+    <div class="brand"><span class="dot"></span> Andrada Diaconita</div>
+    <nav class="nav-links">
+      <a class="pill" href="app.html">Home</a>
+      <a class="pill" href="cv.html">CV</a>
+      <a class="pill cta" href="https://github.com/AndradaDiaconita" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+
+    <!-- Header -->
+    <section class="card cv-header">
+      <h1>Andrada Ioana Diaconita</h1>
+
+      <p class="cv-topline">
+        <span><a href="tel:+14384996603">(438) 499-6603</a></span>
+        <span>•</span>
+        <span><a href="mailto:diaconita.andrada@gmail.com">diaconita.andrada@gmail.com</a></span>
+        <span>•</span>
+        <span><a href="https://www.linkedin.com/in/andradaioanadiaconita/" target="_blank" rel="noopener">linkedin.com/in/andradaioanadiaconita</a></span>
+        <span>•</span>
+        <span><a href="https://github.com/AndradaDiaconita" target="_blank" rel="noopener">github.com/AndradaDiaconita</a></span>
+      </p>
+
+      <p class="cv-sub" style="margin-top:10px;">English, French, Romanian</p>
+    </section>
+
+    <section class="cv-grid">
+
+      <!-- LEFT COLUMN -->
+      <div>
+
+        <!-- Technical Skills -->
+        <section class="card">
+          <div class="cv-section-title">Technical Skills</div>
+
+          <p style="margin-top:12px;">
+            <strong>Languages:</strong> Java (OOP); Python (OOP); C#; SQL; HTML/CSS & JavaScript (Web); LaTeX; R
+          </p>
+          <p>
+            <strong>Developer Tools:</strong> Git/GitHub; Google Cloud; VS Code; Visual Studio; PyCharm; IntelliJ; Eclipse; RStudio; Unity
+          </p>
+          <p style="margin-bottom:0;">
+            <strong>Others:</strong> Google Workspace; Microsoft 365; Photoshop; Office Networking & Infrastructure; OS (Windows, Ubuntu);
+            Virtualization (Azure VM); IT Support & Troubleshooting; Cloud & Storage (Google Drive, OneDrive); Customer Support Tools; Data Algorithms
+          </p>
+        </section>
+
+        <!-- Education -->
+        <section class="card">
+          <div class="cv-section-title">Education</div>
+
+          <div class="cv-item">
+            <div>
+              <div class="cv-role">McGill University</div>
+              <div class="cv-org">Certificate in Applied Cybersecurity</div>
+            </div>
+            <div class="cv-meta">Montreal, Canada<br/>May 2025 – Present</div>
+          </div>
+
+          <div class="cv-item">
+            <div>
+              <div class="cv-role">Concordia University</div>
+              <div class="cv-org">Bachelor in Computer Science</div>
+            </div>
+            <div class="cv-meta">Montreal, Canada<br/>Aug 2022 – Dec 2024<br/>(Spring 2025 Graduation)</div>
+          </div>
+
+          <div class="cv-item">
+            <div>
+              <div class="cv-role">John Abbott College</div>
+              <div class="cv-org">DEC in Science</div>
+            </div>
+            <div class="cv-meta">Montreal, Canada<br/>Aug 2020 – Jun 2022</div>
+          </div>
+
+          <div class="cv-item">
+            <div>
+              <div class="cv-role">Collège Jean-Eudes</div>
+            </div>
+            <div class="cv-meta">Montreal, Canada<br/>Aug 2015 – Jun 2020</div>
+          </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="card">
+          <div class="cv-section-title">Experience</div>
+
+          <div class="cv-item">
+            <div>
+              <div class="cv-role">Certification QA Specialist &amp; SDK C# Coder Internship</div>
+              <div class="cv-org">Genetec Inc.</div>
+              <ul class="cv-bullets">
+                <li>Develop, update, &amp; maintain certifications for integrators, partners, &amp; customers.</li>
+                <li>QA testing for new partners’ integrations in the Genetec app.</li>
+                <li>C# SDK coding (DAP team) to support Certification &amp; QA testing (feature work for users, cardholders, cameras, etc.).</li>
+              </ul>
+            </div>
+            <div class="cv-meta">Montreal, Canada<br/>Sep 2023 – Dec 2023</div>
+          </div>
+
+          <div class="cv-item">
+            <div>
+              <div class="cv-role">Assistant in Real Estate</div>
+              <div class="cv-org">Mentored</div>
+              <ul class="cv-bullets">
+                <li>Communicate with clients by telephone, email, and face-to-face to help them, set up meetings &amp; visits, and answer questions.</li>
+                <li>Assess and troubleshoot problems brought by clients (appointments, requests, and follow-ups).</li>
+                <li>Learn every step in real estate as an agent: communication, contracts, time management, etc.</li>
+                <li>Improved communication and organization skills.</li>
+              </ul>
+            </div>
+            <div class="cv-meta">Montreal, Canada<br/>Sep 2021 – Dec 2022<br/>&amp; Feb 2025 – Nov 2025</div>
+          </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="card">
+          <div class="cv-section-title">Projects (More on GitHub)</div>
+
+          <div style="padding-top: 10px;">
+            <div class="cv-role">2D Platformer Unity Video Game | C#</div>
+            <ul class="cv-bullets">
+              <li>Developed a 2D platformer video game in Unity using C# with object-oriented design principles and modular architecture.</li>
+              <li>Implemented core mechanics including collision detection, physics-based movement, lighting variations, dialogue system, quests, and a final boss.</li>
+              <li>Integrated Unity assets for visuals, animations, and audio to enhance user experience.</li>
+              <li>Used Git for version control and conducted QA testing to ensure stability and scalability.</li>
+            </ul>
+          </div>
+
+          <div style="padding-top: 6px;">
+            <div class="cv-role">AI Photo Classification &amp; Analysis Project | Python</div>
+            <ul class="cv-bullets">
+              <li>Developed a Python-based AI project to analyze and classify images using machine learning techniques and data preprocessing pipelines.</li>
+              <li>Implemented feature extraction, model training, and evaluation to assess performance and accuracy.</li>
+              <li>Produced a structured technical report documenting methodology, results, and limitations of the model.</li>
+            </ul>
+          </div>
+
+          <div style="margin-top:10px;">
+            <a class="pill cta" href="https://github.com/AndradaDiaconita?tab=repositories" target="_blank" rel="noopener">View projects on GitHub</a>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <aside>
+
+        <section class="card">
+          <div class="cv-section-title">Quick Links</div>
+          <div class="tag-row">
+            <a class="tag" href="https://github.com/AndradaDiaconita?tab=repositories">Portfolio Home</a>
+            <a class="tag" href="https://github.com/AndradaDiaconita" target="_blank" rel="noopener">GitHub</a>
+            <a class="tag" href="https://www.linkedin.com/in/andradaioanadiaconita/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="tag" href="mailto:diaconita.andrada@gmail.com">Email</a>
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="cv-section-title">Strengths</div>
+          <ul class="cv-bullets">
+            <li>Clear documentation &amp; communication</li>
+            <li>Structured troubleshooting / debugging</li>
+            <li>Organized project delivery</li>
+            <li>Fast learner, strong fundamentals</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <div class="cv-section-title">Notes</div>
+          <p class="muted" style="margin:10px 0 0;">
+            The PDF Resume/CV will always be the one up to date compared to the Website one.
+          </p>
+        </section>
+
+      </aside>
+    </section>
+
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
